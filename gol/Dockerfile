@@ -1,5 +1,6 @@
 FROM maven:3-jdk-8 AS mvn
-RUN git clone https://github.com/wakaleo/game-of-life.git && cd game-of-life && mvn package
+RUN git clone https://github.com/wakaleo/game-of-life.git
+RUN cd game-of-life && mvn package
 
 
 FROM tomcat:8
